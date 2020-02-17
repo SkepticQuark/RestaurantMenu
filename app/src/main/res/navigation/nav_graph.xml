@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/home3"
-        android:name="com.example.restuarantmenu.home"
+        android:name="com.example.restaurantmenu.home"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -19,12 +19,12 @@
     </fragment>
     <fragment
         android:id="@+id/lunch4"
-        android:name="com.example.restuarantmenu.lunch"
+        android:name="com.example.restaurantmenu.lunch"
         android:label="fragment_lunch"
         tools:layout="@layout/fragment_lunch" />
     <fragment
         android:id="@+id/starter"
-        android:name="com.example.restuarantmenu.starter"
+        android:name="com.example.restaurantmenu.starter"
         android:label="fragment_starter"
         tools:layout="@layout/fragment_starter" />
 </navigation>
