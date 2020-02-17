@@ -1,4 +1,4 @@
-package com.example.restuarantmenu;
+package com.example.restaurantmenu;
 
 import android.os.Bundle;
 
@@ -9,9 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class drink extends Fragment {
 
-    public drink() {
+public class orderSummary extends Fragment {
+
+    public orderSummary() {
         // Required empty public constructor
     }
 
@@ -19,6 +20,6 @@ public class drink extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_drink, container, false);
+        return inflater.inflate(R.layout.fragment_order_summary, container, false);
     }
 }
