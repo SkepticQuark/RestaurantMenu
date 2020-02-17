@@ -1,4 +1,4 @@
-package com.example.restuarantmenu;
+package com.example.restaurantmenu;
 
 import androidx.appcompat.app.AppCompatActivity;
 

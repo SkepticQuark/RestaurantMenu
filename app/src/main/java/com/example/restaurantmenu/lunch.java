@@ -1,4 +1,4 @@
-package com.example.restuarantmenu;
+package com.example.restaurantmenu;
 
 
 import android.os.Bundle;
@@ -8,15 +8,16 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class starter extends Fragment {
+public class lunch extends Fragment {
 
 
-    public starter() {
+    public lunch() {
         // Required empty public constructor
     }
 
@@ -25,7 +26,6 @@ public class starter extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_starter, container, false);
+        return inflater.inflate(R.layout.fragment_lunch, container, false);
     }
-
 }
