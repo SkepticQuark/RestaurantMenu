@@ -1,27 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".starter">
 
     <Button
         android:id="@+id/Option1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Option1" />
+        android:layout_width="282dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/sf_menu_option_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/Option2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Option2" />
+        android:layout_width="282dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/sf_menu_option_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Option1" />
 
     <Button
         android:id="@+id/Option3"
-        android:layout_width="match_parent"
+        android:layout_width="282dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/sf_menu_option_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Option2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Option3" />
-</FrameLayout>
+        android:layout_marginTop="32dp"
+        android:text="@string/sf_title"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

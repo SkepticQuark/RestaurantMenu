@@ -12,11 +12,7 @@ public class MainActivity extends AppCompatActivity {
     boolean isDinner = false;
 
     // Variables used to store the users meal selection
-    String lunchOption = "",
-        drinkOption = "",
-        starterOption = "",
-        dinnerOption = "",
-        dessertOption = "";
+    String lunchOption, drinkOption, starterOption, dinnerOption, dessertOption;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +21,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void clearMenuSelection() {
-        lunchOption = "";
-        drinkOption = "";
-        starterOption = "";
-        dinnerOption = "";
-        dessertOption = "";
+        lunchOption = "No Order Placed";
+        drinkOption = "No Order Placed";
+        starterOption = "No Order Placed";
+        dinnerOption = "No Order Placed";
+        dessertOption = "No Order Placed";
     }
 
     public void setLunchOption(View view) {

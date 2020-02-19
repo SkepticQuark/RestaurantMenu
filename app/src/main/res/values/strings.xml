@@ -1,11 +1,33 @@
 <resources>
     <string name="app_name">RestaurantMenu</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Values for Lunch Menu Fragment -->
+    <string name="lf_title">Lunch</string>
     <string name="dinnerButton">Dinner Menu</string>
     <string name="lunchButton">Lunch Menu</string>
     <string name="lunchMenu1">Lasagne with chips €7.20</string>
     <string name="lunchMenu2">Chicken roll with chips €5.50</string>
     <string name="lunchMenu3">Beef burger with chips €7.50</string>
+
+    <!-- Values for Starter Menu Fragment -->
+    <string name="sf_title">Starter</string>
+    <string name="sf_menu_option_1">Soup - €3.00</string>
+    <string name="sf_menu_option_2">Salad - €4.00</string>
+    <string name="sf_menu_option_3">Sandwich - €4.75</string>
+
+    <string name="dsf_title">Dessert</string>
+    <string name="dsf_menu_option_1">Chocolate Cake - €4.55</string>
+    <string name="dsf_menu_option_2">Apple Strudle and Cream - €3.95</string>
+    <string name="dsf_menu_option_3">Jelly and Ice-Cream - €2.50</string>
+
+    <!-- Values for Order Menu Fragment -->
+    <!-- "osf" = Order Summary Fragment -->
+    <string name="osf_title">Order Summary</string>
+    <string name="osf_drink_title">Drink</string>
+    <string name="osf_lunch_title">Lunch</string>
+    <string name="osf_starter_title">Starter</string>
+    <string name="osf_dinner_title">Dinner</string>
+    <string name="osf_dessert_title">Dessert</string>
+    <string name="osf_no_order_placed">No Order Placed</string>
+    <string name="osf_back_button">Back to Main Menu</string>
 </resources>
