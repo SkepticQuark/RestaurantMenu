@@ -36,6 +36,10 @@ public class home extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState){
         super.onViewCreated(view, savedInstanceState);
 
+        // Clear all previously made menu selections
+        MainActivity ma = (MainActivity) getActivity();
+        ma.clearMenuSelection();
+
         Button lunchButton = view.findViewById(R.id.lunchButton);
         lunchButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +52,8 @@ public class home extends Fragment {
         dinnerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                MainActivity ma = (MainActivity) getActivity();
+                ma.isDinner = true;
                 Navigation.findNavController(v).navigate(R.id.action_home3_to_starter);
             }
         });

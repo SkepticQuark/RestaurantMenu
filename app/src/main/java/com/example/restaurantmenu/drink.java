@@ -35,6 +35,7 @@ public class drink extends Fragment {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                setDinnerOption(v);
                 Navigation.findNavController(v).navigate(R.id.action_drink_to_orderSummary);
             }
         });
@@ -43,6 +44,7 @@ public class drink extends Fragment {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                setDinnerOption(v);
                 Navigation.findNavController(v).navigate(R.id.action_drink_to_orderSummary);
             }
         });
@@ -51,8 +53,15 @@ public class drink extends Fragment {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                setDinnerOption(v);
                 Navigation.findNavController(v).navigate(R.id.action_drink_to_orderSummary);
             }
         });
+    }
+
+    private void setDinnerOption(View v) {
+        MainActivity ma = (MainActivity) getActivity();
+        TextView tv = (TextView) v;
+        ma.drinkOption = tv.getText().toString();
     }
 }

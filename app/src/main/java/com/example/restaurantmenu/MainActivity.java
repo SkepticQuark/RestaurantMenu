@@ -20,51 +20,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    private void clearMenuSelection() {
+    public void clearMenuSelection() {
         lunchOption = "No Order Placed";
         drinkOption = "No Order Placed";
         starterOption = "No Order Placed";
         dinnerOption = "No Order Placed";
         dessertOption = "No Order Placed";
-    }
-
-    public void setLunchOption(View view) {
-        // Clear all menu selections made so far
-        clearMenuSelection();
-
         isDinner = false;
-
-        TextView tv = (TextView) view;
-        lunchOption = tv.getText().toString();
-        System.out.println("------- Updated lunchOption text to " + lunchOption);
-    }
-
-    public void setDrinkOption(View view) {
-        TextView tv = (TextView) view;
-        drinkOption = tv.getText().toString();
-        System.out.println("------- Updated drinkOption text to " + drinkOption);
-    }
-
-    public void setStarterOption(View view) {
-        // Clear all menu selections made so far
-        clearMenuSelection();
-
-        isDinner = true;
-
-        TextView tv = (TextView) view;
-        starterOption = tv.getText().toString();
-        System.out.println("------- Updated starterOption text to " + starterOption);
-    }
-
-    public void setDinnerOption(View view) {
-        TextView tv = (TextView) view;
-        dinnerOption = tv.getText().toString();
-        System.out.println("------- Updated dinnerOption text to " + dinnerOption);
-    }
-
-    public void setDessertOption(View view) {
-        TextView tv = (TextView) view;
-        dessertOption = tv.getText().toString();
-        System.out.println("------- Updated dessertOption text to " + dessertOption);
     }
 }

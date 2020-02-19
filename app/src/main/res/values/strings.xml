@@ -16,6 +16,10 @@
     <string name="sf_menu_option_3">Sandwich - €4.75</string>
 
     <!-- Values for Dinner Menu -->
+    <string name="df_title">Dinner</string>
+    <string name="df_menu_option1">Pizza and Chips - €9.80</string>
+    <string name="df_menu_option2">Chicken Curry and Chips - €8.00</string>
+    <string name="df_menu_option3">Fish and Chips - €9.50</string>
 
     <!-- Values for Dessert Menu -->
     <string name="dsf_title">Dessert</string>

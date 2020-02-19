@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 /**
@@ -40,6 +41,7 @@ public class lunch extends Fragment {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                setLunchOption(v);
                 Navigation.findNavController(v).navigate(R.id.action_lunch4_to_drink);
             }
         });
@@ -48,6 +50,7 @@ public class lunch extends Fragment {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                setLunchOption(v);
                 Navigation.findNavController(v).navigate(R.id.action_lunch4_to_drink);
             }
         });
@@ -56,8 +59,15 @@ public class lunch extends Fragment {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                setLunchOption(v);
                 Navigation.findNavController(v).navigate(R.id.action_lunch4_to_drink);
             }
         });
+    }
+
+    private void setLunchOption(View v) {
+        MainActivity ma = (MainActivity) getActivity();
+        TextView tv = (TextView) v;
+        ma.lunchOption = tv.getText().toString();
     }
 }

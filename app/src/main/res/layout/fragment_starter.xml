@@ -8,7 +8,7 @@
     tools:context=".starter">
 
     <Button
-        android:id="@+id/Option1"
+        android:id="@+id/sf_menu_option1"
         android:layout_width="282dp"
         android:layout_height="53dp"
         android:layout_marginTop="100dp"
@@ -18,24 +18,24 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/Option2"
+        android:id="@+id/sf_menu_option2"
         android:layout_width="282dp"
         android:layout_height="53dp"
         android:layout_marginTop="72dp"
         android:text="@string/sf_menu_option_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Option1" />
+        app:layout_constraintTop_toBottomOf="@+id/sf_menu_option1" />
 
     <Button
-        android:id="@+id/Option3"
+        android:id="@+id/sf_menu_option3"
         android:layout_width="282dp"
         android:layout_height="53dp"
         android:layout_marginTop="72dp"
         android:text="@string/sf_menu_option_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Option2" />
+        app:layout_constraintTop_toBottomOf="@+id/sf_menu_option2" />
 
     <TextView
         android:id="@+id/textView"
