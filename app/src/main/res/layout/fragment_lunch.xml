@@ -11,38 +11,47 @@
         android:id="@+id/lunchMenu1"
         android:layout_width="238dp"
         android:layout_height="41dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="100dp"
         android:onClick="setLunchOption"
         android:text="@string/lunchMenu1"
-        app:layout_constraintEnd_toEndOf="@+id/lunchMenu2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/lunchMenu2"
-        app:layout_constraintTop_toBottomOf="@+id/lunchMenu2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
         tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/lunchMenu2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
+        android:layout_marginTop="72dp"
         android:onClick="setLunchOption"
         android:text="@string/lunchMenu2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lunchMenu1"
         tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/lunchMenu3"
         android:layout_width="240dp"
         android:layout_height="51dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="72dp"
         android:onClick="setLunchOption"
         android:text="@string/lunchMenu3"
-        app:layout_constraintEnd_toEndOf="@+id/lunchMenu1"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/lunchMenu1"
-        app:layout_constraintTop_toBottomOf="@+id/lunchMenu1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lunchMenu2"
         tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/lf_title"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

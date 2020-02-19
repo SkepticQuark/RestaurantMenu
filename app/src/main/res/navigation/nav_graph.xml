@@ -21,10 +21,50 @@
         android:id="@+id/lunch4"
         android:name="com.example.restaurantmenu.lunch"
         android:label="fragment_lunch"
-        tools:layout="@layout/fragment_lunch" />
+        tools:layout="@layout/fragment_lunch" >
+        <action
+            android:id="@+id/action_lunch4_to_drink"
+            app:destination="@id/drink" />
+    </fragment>
     <fragment
         android:id="@+id/starter"
         android:name="com.example.restaurantmenu.starter"
         android:label="fragment_starter"
-        tools:layout="@layout/fragment_starter" />
+        tools:layout="@layout/fragment_starter" >
+        <action
+            android:id="@+id/action_starter_to_dinner"
+            app:destination="@id/dinner" />
+    </fragment>
+    <fragment
+        android:id="@+id/dessert"
+        android:name="com.example.restaurantmenu.dessert"
+        android:label="fragment_dessert"
+        tools:layout="@layout/fragment_dessert" >
+        <action
+            android:id="@+id/action_dessert_to_drink"
+            app:destination="@id/drink" />
+    </fragment>
+    <fragment
+        android:id="@+id/dinner"
+        android:name="com.example.restaurantmenu.dinner"
+        android:label="fragment_dinner"
+        tools:layout="@layout/fragment_dinner" >
+        <action
+            android:id="@+id/action_dinner_to_dessert"
+            app:destination="@id/dessert" />
+    </fragment>
+    <fragment
+        android:id="@+id/drink"
+        android:name="com.example.restaurantmenu.drink"
+        android:label="fragment_drink"
+        tools:layout="@layout/fragment_drink" >
+        <action
+            android:id="@+id/action_drink_to_orderSummary"
+            app:destination="@id/orderSummary" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderSummary"
+        android:name="com.example.restaurantmenu.orderSummary"
+        android:label="fragment_order_summary"
+        tools:layout="@layout/fragment_order_summary" />
 </navigation>

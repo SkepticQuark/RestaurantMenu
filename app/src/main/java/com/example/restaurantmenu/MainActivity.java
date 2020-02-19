@@ -12,11 +12,7 @@ public class MainActivity extends AppCompatActivity {
     boolean isDinner = false;
 
     // Variables used to store the users meal selection
-    String lunchOption = "",
-        drinkOption = "",
-        starterOption = "",
-        dinnerOption = "",
-        dessertOption = "";
+    String lunchOption, drinkOption, starterOption, dinnerOption, dessertOption;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +21,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void clearMenuSelection() {
-        lunchOption = "";
-        drinkOption = "";
-        starterOption = "";
-        dinnerOption = "";
-        dessertOption = "";
+        lunchOption = "No Order Placed";
+        drinkOption = "No Order Placed";
+        starterOption = "No Order Placed";
+        dinnerOption = "No Order Placed";
+        dessertOption = "No Order Placed";
     }
 
     public void setLunchOption(View view) {
@@ -40,13 +36,13 @@ public class MainActivity extends AppCompatActivity {
 
         TextView tv = (TextView) view;
         lunchOption = tv.getText().toString();
-        System.out.println("Updated lunchOption text to " + lunchOption);
+        System.out.println("------- Updated lunchOption text to " + lunchOption);
     }
 
     public void setDrinkOption(View view) {
         TextView tv = (TextView) view;
         drinkOption = tv.getText().toString();
-        System.out.println("Updated lunchOption text to " + drinkOption);
+        System.out.println("------- Updated drinkOption text to " + drinkOption);
     }
 
     public void setStarterOption(View view) {
@@ -57,18 +53,18 @@ public class MainActivity extends AppCompatActivity {
 
         TextView tv = (TextView) view;
         starterOption = tv.getText().toString();
-        System.out.println("Updated lunchOption text to " + starterOption);
+        System.out.println("------- Updated starterOption text to " + starterOption);
     }
 
     public void setDinnerOption(View view) {
         TextView tv = (TextView) view;
         dinnerOption = tv.getText().toString();
-        System.out.println("Updated lunchOption text to " + dinnerOption);
+        System.out.println("------- Updated dinnerOption text to " + dinnerOption);
     }
 
     public void setDessertOption(View view) {
         TextView tv = (TextView) view;
         dessertOption = tv.getText().toString();
-        System.out.println("Updated lunchOption text to " + dessertOption);
+        System.out.println("------- Updated dessertOption text to " + dessertOption);
     }
 }

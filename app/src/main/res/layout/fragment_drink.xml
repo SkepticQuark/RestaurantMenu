@@ -11,49 +11,44 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
         android:layout_marginTop="80dp"
-        android:text="Drinks Menu"
+        android:text="@string/dkf_title"
         android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/guiness"
+        android:id="@+id/dkf_option1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="230dp"
-        android:layout_marginTop="216dp"
-        android:layout_marginEnd="230dp"
+        android:layout_marginTop="100dp"
         android:onClick="setDrinkOption"
-        android:text="Guiness   €4.80"
+        android:text="@string/dkf_menu_option_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/whiskey"
+        android:id="@+id/dkf_option2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="72dp"
         android:onClick="setDrinkOption"
-        android:text="Whiskey   €4.20"
+        android:text="@string/dkf_menu_option_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guiness" />
+        app:layout_constraintTop_toBottomOf="@+id/dkf_option1" />
 
     <Button
-        android:id="@+id/lucozade"
+        android:id="@+id/dkf_option3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="72dp"
         android:onClick="setDrinkOption"
-        android:text="Lucozade  €2.20"
+        android:text="@string/dkf_menu_option_3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/whiskey" />
+        app:layout_constraintTop_toBottomOf="@+id/dkf_option2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
